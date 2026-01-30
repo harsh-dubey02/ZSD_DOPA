@@ -1,0 +1,20 @@
+managed implementation in class zbp_i_dopa unique;
+strict ( 2 );
+
+define behavior for ZI_DOPA //alias <alias_name>
+with unmanaged save
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create ( authorization : global );
+  update;
+  delete;
+  field ( readonly ) SalesDocument;
+  action ( features : instance ) ZPRINT result [1] $self;
+  mapping for zsdt_dopa
+    {
+      SalesDocument = vbeln;
+      base64        = base64;
+    }
+}

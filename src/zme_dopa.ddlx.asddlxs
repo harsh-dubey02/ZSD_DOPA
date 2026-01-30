@@ -1,0 +1,30 @@
+@Metadata.layer: #CORE
+@UI:{
+    headerInfo:{
+    typeName: 'DOPA',
+    typeNamePlural: 'DOPA' },
+        presentationVariant: [{ sortOrder: [{ by: 'SalesDocument', direction: #DESC }] }]
+    }
+annotate entity ZC_dopa with
+{
+
+  @UI.facet: [
+
+  {
+  id : 'Header',
+  purpose: #STANDARD,
+  type: #IDENTIFICATION_REFERENCE,
+  label: 'DOPA',
+  position: 10
+  }
+
+  ]
+
+  @UI: { lineItem:[{ position: 10 }, { type: #FOR_ACTION , dataAction: 'ZPRINT', label: 'Generate Print'}],
+  identification: [{ position: 10 }],
+  selectionField: [{ position: 10 }] }
+  SalesDocument;
+
+  @UI.hidden: true
+  base64;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "An SAP Fiori application.",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Domestic Sales Order Print"
+  },
+  "ui5AppDetails": {
+    "appId": "zsddopa"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D3C18CE7449DFB94990022B2B1E99E01B3650523_TM",
+    "semanticObject": "zso_dopa",
+    "action": "print",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D3C18CE7449DFB94990022B2B1E99E01B3650523_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Domestic Sales Order Print"
+      }
+    }
+  ]
+}
